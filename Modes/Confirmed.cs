@@ -8,11 +8,20 @@ namespace Backlog_State.Modes
 {
     class Confirmed : TaskState
     {
+        public Confirmed()
+        {
+            Console.WriteLine("Confirmed");
+        }
+
         public override void Start(Task task)
-        { Console.WriteLine("Уведомление разработчиков"); }
+        { 
+            Console.WriteLine("Уведомление разработчиков"); 
+        }
 
         public override void Update(Task task)
-        { Console.WriteLine("Уведомление разработчиков и менеджеров"); }
+        { 
+            Console.WriteLine("Уведомление разработчиков и менеджеров"); 
+        }
 
         public override void NextState(Task task)
         {

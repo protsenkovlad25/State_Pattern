@@ -13,6 +13,15 @@ namespace Backlog_State
             task.Start();
             task.Update();
             task.NextState();
+
+
+            task.Start();
+            task.Update();
+            task.NextState();
+
+            task.Start();
+            task.Update();
+            task.NextState();
         }
     }
 }

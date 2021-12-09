@@ -8,11 +8,20 @@ namespace Backlog_State.Modes
 {
     class InProcess : TaskState
     {
+        public InProcess()
+        {
+            Console.WriteLine("InProcess");
+        }
+
         public override void Start(Task task)
-        { Console.WriteLine("Уведомление разработчиков и менеджеров"); }
+        { 
+            Console.WriteLine("Уведомление разработчиков и менеджеров"); 
+        }
 
         public override void Update(Task task)
-        { Console.WriteLine("Уведомление разработчиков и менеджеров"); }
+        { 
+            Console.WriteLine("Уведомление разработчиков и менеджеров");
+        }
 
         public override void NextState(Task task)
         {

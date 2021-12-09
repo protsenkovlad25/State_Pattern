@@ -9,11 +9,20 @@ namespace Backlog_State.Modes
 {
     class New : TaskState
     {
+        public New()
+        {
+            Console.WriteLine("New");
+        }
+
         public override void Start(Task task)
-        { Console.WriteLine("Уведомление менеджеров"); }
+        { 
+            Console.WriteLine("Уведомление менеджеров"); 
+        }
 
         public override void Update(Task task)
-        { Console.WriteLine("Уведомление менеджеров"); }
+        { 
+            Console.WriteLine("Уведомление менеджеров"); 
+        }
 
         public override void NextState(Task task)
         {
